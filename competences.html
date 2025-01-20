@@ -8,14 +8,26 @@
 </head>
 <body>
     <header>
-        <h1>Mes compétences</h1>
-        <button id="themeToggle">Changer de thème</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="google-sheet">
-        <iframe src="https://docs.google.com/spreadsheets/d/1a_Y1WLWip4KFqjHTPYUMQrZBZgHPMxAz/edit?usp=sharing&ouid=114994851346802215359&rtpof=true&sd=true"
+    <section id="google-sheet" class="card">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ9sY9rQrIu2XkP-MrQYg7z09_Y3JxGVxYl2lXMJXsXl9sX5sdxVAn5FF1V7tw5A/embed?usp=sharing"
         width="100%" height="600px"></iframe>
     </section>
+
+    <!-- Bouton de changement de thème -->
+    <div id="themeToggle" class="theme-toggle">
+        <span id="themeIcon" class="sun">&#9733;</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
