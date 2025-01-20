@@ -8,17 +8,24 @@
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <button id="themeToggle">Changer de thème</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="presentation">
+    <section id="presentation" class="card">
         <h2>À propos de moi</h2>
-        <img src="photo.jpg" alt="Photo de moi">
+        <img src="photo.jpg" alt="Photo de moi" class="photo">
         <p>Je suis [Nom Prénom], actuellement en [situation scolaire]. Passionné par [centres d'intérêt], voici mon parcours.</p>
     </section>
 
-    <section id="parcours">
+    <section id="parcours" class="card">
         <h2>Mon parcours scolaire</h2>
         <table>
             <thead>
@@ -39,7 +46,7 @@
         </table>
     </section>
 
-    <section id="centres-interets">
+    <section id="centres-interets" class="card">
         <h2>Mes centres d'intérêts</h2>
         <ul>
             <li class="interest" onclick="toggleInterest('interest1')">[Centre d'intérêt 1]</li>
@@ -47,6 +54,11 @@
             <!-- Répéter pour chaque centre d'intérêt -->
         </ul>
     </section>
+
+    <!-- Bouton de changement de thème -->
+    <div id="themeToggle" class="theme-toggle">
+        <span id="themeIcon" class="sun">&#9733;</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
