@@ -1,1 +1,53 @@
-Nothing to see here
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur mon portfolio</h1>
+        <button id="themeToggle">Changer de thème</button>
+    </header>
+
+    <section id="presentation">
+        <h2>À propos de moi</h2>
+        <img src="photo.jpg" alt="Photo de moi">
+        <p>Je suis [Nom Prénom], actuellement en [situation scolaire]. Passionné par [centres d'intérêt], voici mon parcours.</p>
+    </section>
+
+    <section id="parcours">
+        <h2>Mon parcours scolaire</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom de l'établissement</th>
+                    <th>Formation</th>
+                    <th>Année</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>[Nom établissement]</td>
+                    <td>[Formation]</td>
+                    <td>[Année]</td>
+                </tr>
+                <!-- Ajoute plus de lignes selon ton parcours -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="centres-interets">
+        <h2>Mes centres d'intérêts</h2>
+        <ul>
+            <li class="interest" onclick="toggleInterest('interest1')">[Centre d'intérêt 1]</li>
+            <div id="interest1" class="interest-description" style="display:none;">Description du centre d'intérêt 1</div>
+            <!-- Répéter pour chaque centre d'intérêt -->
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
