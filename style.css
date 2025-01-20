@@ -1,46 +1,97 @@
+/* Styles globaux */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s ease;
 }
 
 header {
-    background-color: #0044cc;
-    color: white;
-    padding: 1em;
+    background-color: #70a1ff;
+    padding: 15px 30px;
     text-align: center;
 }
 
-button {
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    padding: 0.5em 1em;
-    cursor: pointer;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-button:hover {
-    background-color: #005f8a;
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 h1, h2 {
-    font-size: 2em;
     color: #333;
 }
 
-section {
-    padding: 2em;
-    margin: 1em 0;
+/* Style des cartes */
+.card {
     background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Thème sombre */
+body.dark-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+body.dark-theme header {
+    background-color: #34495e;
+}
+
+body.dark-theme .card {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+body.dark-theme nav ul li a {
+    color: #ecf0f1;
+}
+
+/* Bouton changement de thème */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #70a1ff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.sun, .moon {
+    color: white;
+}
+
+/* Rendre le site responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
     }
 
-    header h1 {
-        font-size: 1.5em;
+    .card {
+        margin: 10px;
     }
 }
