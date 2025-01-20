@@ -8,17 +8,29 @@
 </head>
 <body>
     <header>
-        <h1>Mon CV</h1>
-        <button id="themeToggle">Changer de thème</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="pdf-viewer">
+    <section id="pdf-viewer" class="card">
         <embed src="cv.pdf" width="100%" height="800px" type="application/pdf">
     </section>
 
     <button id="downloadCvBtn">
         <a href="cv.pdf" download>Télécharger mon CV</a>
     </button>
+
+    <!-- Bouton de changement de thème -->
+    <div id="themeToggle" class="theme-toggle">
+        <span id="themeIcon" class="sun">&#9733;</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
