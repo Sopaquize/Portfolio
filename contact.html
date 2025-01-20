@@ -8,11 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>Contactez-moi</h1>
-        <button id="themeToggle">Changer de thème</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="reseaux-sociaux">
+    <section id="reseaux-sociaux" class="card">
         <h2>Mes réseaux sociaux</h2>
         <ul>
             <li><a href="https://www.instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
@@ -20,7 +27,7 @@
         </ul>
     </section>
 
-    <section id="formulaire-contact">
+    <section id="formulaire-contact" class="card">
         <h2>Envoyer un message</h2>
         <form action="mailto:ton-email@example.com" method="post" enctype="text/plain">
             <label for="nom">Nom :</label>
@@ -38,6 +45,11 @@
             <button type="submit">Envoyer</button>
         </form>
     </section>
+
+    <!-- Bouton de changement de thème -->
+    <div id="themeToggle" class="theme-toggle">
+        <span id="themeIcon" class="sun">&#9733;</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
